@@ -1,32 +1,74 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Jekyll configuration
+# see : https://jekyllrb.com/docs/configuration/
 title: Haute-Marne Insoumise
 email: insoumis52@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Site des Insoumis.es de Haute-Marne.
+email-cc: insoumis@pygmeeweb.com
+description: Haute-Marne Insoumise
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://HauteMarneInsoumise.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+logoImage: phi-insoumis-blanc.svg
+
+language: fr
+
 twitter_username: F_insoumis52
+facebook_username: HauteMarneinsoumiseJLM2017
 github_username:  HauteMarneInsoumise
+youtube_channel: UCZt8bymtSIzYl5r0ma7P-8A
+
+google_analytics_tracking_id:
+
+# using twitter bootstrap
+sass:
+  # loading path from site root
+  # default to _sass
+  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+
+  # style : nested (default), compact, compressed, expanded
+  #         :nested, :compact, :compressed, :expanded also works
+  # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+  style: compressed
+
+
+# default setup
+
+defaults:
+  -
+    scope:
+      type: pages
+      path: "pages"
+    values:
+      permalink: /:basename/
+      layout: default
+
+  -
+    scope:
+      type: posts
+    values:
+      permalink: pretty
+      layout: post
+
 
 # Build settings
 markdown: kramdown
 
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: true
+  # parse markdown inside block-level HTML tag
+  parse_block_html: true
+
 gems:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .travis.yml
+  - scripts/*
+  - bower.json
+  - Readme.md
