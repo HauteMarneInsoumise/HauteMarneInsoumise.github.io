@@ -1,0 +1,18 @@
+{
+  "name": "i52",
+  "homepage": "https://github.com/HauteMarneInsoumise/HauteMarneInsoumise.github.io",
+  "authors": [
+    "djacquel <github@pygmeeweb.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "CC BY",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
