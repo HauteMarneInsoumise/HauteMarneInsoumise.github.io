@@ -886,27 +886,19 @@ $hr-border:                   $gray-lighter !default;
 /* any style customization must be before the bootstrap import */
 @import "bootstrap";
 
-.jumbotron.home{
-  background-image: url({{ site.baseurl }}/assets/img/team-i52-1.jpg);
-  background-position : center;
-//  min-height: 400px;
+.subheader{
+  padding: 10px 10px 5px;
+  .aec{
+    width: 100px;
 
-  .text-background{
-    background: rgba(255, 255, 255, 0.7);
+    @media (min-width: $screen-sm-min) {
+      width: 150px;
+    }
   }
-
-  h1{
-    color: $brand-success;
-    text-shadow: 1px 1px 2px white;
-  }
-}
-
-h1, h2{
-  font-weight: bold;
 }
 
 .navbar{
-  margin-bottom: 0;
+  // margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-toggle{
@@ -920,18 +912,57 @@ h1, h2{
 
 .site-title{
 
-  margin: 9px 0;
-
-  img{
-    width: 35px;
-    height: 35px;
-  }
+  //margin: 9px 0;
+  padding: 12px 3px;
   a{
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 700;
   }
 }
+
+h1, h2{
+  font-weight: bold;
+}
+
+.more-arrow{
+  padding-left: 10px;
+  //font-size: 1.4em;
+}
+
+figure{
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+
+  h3{
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+
+    a, &:hover{
+      border: none;
+    }
+  }
+  &.thumbnail{
+    background: white;
+    position: relative;
+  }
+  &.rot0{
+    transform: rotate(2deg);
+  }
+  &.rot1{
+    transform: rotate(-2deg);
+  }
+  &.rot2{
+    transform: rotate(4deg);
+  }
+  &.rot3{
+    transform: rotate(-4deg);
+  }
+  &.rot4{
+    // transform: rotate(0);
+  }
+}
+
 
 .footer{
   margin-top: 20px;
@@ -941,4 +972,15 @@ h1, h2{
   p{
     padding: 10px 0;
   }
+}
+
+
+
+// Spécifique Charte
+.swatches{
+  color: white;
+}
+
+.swatch{
+  height: 100px;
 }
