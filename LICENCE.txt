@@ -1,0 +1,9 @@
+Site de la Haute-Marne Insoumise
+
+Contenu sous licence Creatice Commons - Attribution - Pas d’Utilisation Commerciale 3.0 France (CC BY-NC 3.0 FR) sauf mention contraire.
+https://creativecommons.org/licenses/by-nc/3.0/fr/
+
+Social icons by rohitink.com under GNU General Public License v3.0
+https://rohitink.com/sociocons/
+
+Site made with Jekyll (https://jekyllrb.com/) and Twitter Bootstrap (http://getbootstrap.com/)
