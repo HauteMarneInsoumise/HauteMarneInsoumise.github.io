@@ -1,24 +1,40 @@
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Soutenez Jean-Luc Mélenchon</h2>
-          <p>Soutenez le candidat de La France Insoumise à l'élection présidentielle 2017.</p>
-          <p><a class="btn btn-primary" href="https://jlm2017.fr/" role="button">Site JLM2017.fr<span class="more-arrow">&rtrif;</span></a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Réseaux sociaux</h2>
-
-          <p><a class="btn btn-primary" href="https://twitter.com/{{ site.twitter_username }}">Twitter : {{ site.twitter_username }}</a></p>
-          <p><a class="btn btn-primary" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook : {{ site.facebook_username }}</a></p>
-          <p><a class="btn btn-primary" href="https://www.youtube.com/channel/{{ site.youtube_channel }}">Youtube : {{ site.youtube_channel }}</a></p>
-
-        </div>
-        <div class="col-md-4">
-          <h2>Tenez vous informés</h2>
-          <p>Abonnez vous à notre news letter.</p>
-          <form class="newsletter">
-            <label for="inputEmail" class="sr-only">Adresse mail</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Mail" required>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Je m'abonne</button>
-          </form>
-        </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h2 class="panel-title">Soutenez Jean-Luc Mélenchon</h2>
       </div>
+      <div class="panel-body">
+        <p>Soutenez le candidat de La France Insoumise à l'élection présidentielle 2017.</p>
+        <p><a class="btn btn-success" href="https://jlm2017.fr/" role="button">Site JLM2017.fr<span class="more-arrow">&rtrif;</span></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2 class="panel-title">Tenez vous informés</h2>
+      </div>
+      <div class="panel-body">
+        <p>Abonnez vous à notre news letter.</p>
+        <form class="newsletter">
+          <label for="inputEmail" class="sr-only">Adresse mail</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Mail" required>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Je m'abonne</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2 class="panel-title">Retrouvez-nous sur les réseaux sociaux</h2>
+      </div>
+      <div class="panel-body">
+        <p><a class="btn btn-primary" href="https://twitter.com/{{ site.twitter_username }}">Twitter : {{ site.twitter_username }}<span class="more-arrow">&rtrif;</span></a></p>
+        <p><a class="btn btn-primary" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook : {{ site.facebook_username }}<span class="more-arrow">&rtrif;</span></a></p>
+        <p><a class="btn btn-primary" href="https://www.youtube.com/channel/{{ site.youtube_channel }}">Youtube : {{ site.youtube_channel }}<span class="more-arrow">&rtrif;</span></a></p>
+      </div>
+    </div>
+  </div>
+</div>

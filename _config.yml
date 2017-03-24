@@ -41,7 +41,7 @@ defaults:
 # twitter bootstrap grid classes used for display
 
 # main row
-main_row_class: "col-xs-6"
+main_row_class: "col-sm-6"
 
 # secondary row
 
