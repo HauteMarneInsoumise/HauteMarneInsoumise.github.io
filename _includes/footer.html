@@ -1,11 +1,20 @@
 <footer class="footer">
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <p>
-        cc-by 2017 {{ site.title }}
-        - <a href="#">Mentions légales</a>
-      </p>
+    <div class="col-sm-12 ">
+      {% assign footerPages = site.pages | where: "menu", "footer" %}
+      <ul class="list-inline">
+      {% for p in footerPages %}
+        <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+      {% endfor %}
+
+      {% comment %} ----- copyright string ----- {% endcomment %}
+      {% assign startYear = 2017 %}
+      {% assign currentYear = site.time | date: "%Y" | to_integer %}
+      {% if startYear != currentYear %}{% capture copyYear %}{{ startYear }}-{{ currentYear }}{% endcapture %}
+      {% else %}{% assign copyYear = startYear %}{% endif %}
+      <li class="text-muted">cc-by {{site.title}} {{ copyYear }}</li>
+      </ul>
     </div>
   </div>
 </div>
