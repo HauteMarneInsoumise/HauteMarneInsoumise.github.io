@@ -11,16 +11,16 @@
     </div>
   </div>
   <div class="col-md-4">
-    <div class="panel panel-primary">
+    <div class="panel panel-info">
       <div class="panel-heading">
-        <h2 class="panel-title">Tenez vous informés</h2>
+        <h2 class="panel-title">Restez informés !</h2>
       </div>
       <div class="panel-body">
-        <p>Abonnez vous à notre news letter.</p>
+        <p>Abonnez vous à notre lettre d'actualités.</p>
         <form class="newsletter">
           <label for="inputEmail" class="sr-only">Adresse mail</label>
           <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Mail" required>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Je m'abonne</button>
+          <button class="btn btn-lg btn-info" type="submit">Je m'abonne</button>
         </form>
       </div>
     </div>
@@ -31,9 +31,11 @@
         <h2 class="panel-title">Retrouvez-nous sur les réseaux sociaux</h2>
       </div>
       <div class="panel-body">
-        <p><a class="btn btn-primary" href="https://twitter.com/{{ site.twitter_username }}">Twitter : {{ site.twitter_username }}<span class="more-arrow">&rtrif;</span></a></p>
-        <p><a class="btn btn-primary" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook : {{ site.facebook_username }}<span class="more-arrow">&rtrif;</span></a></p>
-        <p><a class="btn btn-primary" href="https://www.youtube.com/channel/{{ site.youtube_channel }}">Youtube : {{ site.youtube_channel }}<span class="more-arrow">&rtrif;</span></a></p>
+        <p><a class="btn btn-social btn-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span>{{ site.twitter_username }}</span></a></p>
+
+        <p><a class="btn btn-social btn-facebook" href="https://www.facebook.com/{{ site.facebook_username }}"><span>{{ site.facebook_username }}</span></a></p>
+
+        <p><a class="btn btn-social btn-youtube" href="https://www.youtube.com/channel/{{ site.youtube_channel }}"><span>TV52 Insoumis.es Haute-Marne</span></a></p>
       </div>
     </div>
   </div>

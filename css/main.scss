@@ -19,7 +19,7 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary:         #0098b6 !default; // #337ab7
 $brand-success:         #c9462c !default;
-$brand-info:            #5bc0de !default;
+$brand-info:            #559a21 !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
@@ -114,8 +114,8 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        0 !default;
-$border-radius-large:       0 !default;
+$border-radius-base:        2px !default;
+$border-radius-large:       2px !default;
 $border-radius-small:       0 !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
@@ -513,7 +513,7 @@ $state-success-bg:               $brand-success !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
 $state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-bg:                  #559a21 !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
 $state-warning-text:             #8a6d3b !default;
@@ -736,7 +736,7 @@ $panel-success-text:          $state-success-text !default;
 $panel-success-border:        $state-success-border !default;
 $panel-success-heading-bg:    $state-success-bg !default;
 
-$panel-info-text:             $state-info-text !default;
+$panel-info-text:             white !default;
 $panel-info-border:           $state-info-border !default;
 $panel-info-heading-bg:       $state-info-bg !default;
 
@@ -978,8 +978,54 @@ figure{
     color: $brand-success;
     margin-top: 5px;
     font-size: 1.4em;
+    @media (min-width: $screen-xs-min) {
+      font-size: 1.8em;
+    }
   }
 }
+
+.btn-social{
+  padding: 0 0 0 31px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-image: url("../img/sociocons.svg");
+  background-size: 125px;
+  background-position-y: -1px;
+  color: white;
+  span{
+    display: inline-block;
+    padding: 5px;
+  }
+}
+
+$color-twitter: #1da1f2;
+$color-facebook: #3b5998;
+$color-youtube: #e52d27;
+
+.btn-twitter{
+  border-color: $color-twitter;
+  background-position-x: -31px;
+  span{
+    background-color: $color-twitter;
+  }
+}
+
+.btn-facebook{
+  border-color: $color-facebook;
+  background-position-x: -2px;
+  span{
+    background-color: $color-facebook;
+  }
+}
+
+.btn-youtube{
+  border-color: $color-youtube;
+  background-position-x: -93px;
+  span{
+    background-color: $color-youtube;
+  }
+}
+
 
 .footer{
   margin-top: 20px;
