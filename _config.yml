@@ -17,7 +17,7 @@ facebook_username: HauteMarneinsoumiseJLM2017
 github_username:  HauteMarneInsoumise
 youtube_channel: UCZt8bymtSIzYl5r0ma7P-8A
 
-google_analytics_tracking_id:
+google_analytics: UA-96117581-1
 
 # default setup
 
@@ -95,6 +95,7 @@ kramdown:
 
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
