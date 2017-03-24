@@ -4,43 +4,64 @@ menu: main
 weight: 10
 permalink: /
 ---
-
-
     <div class="container">
 
       <div class="row">
-        <div class="col-md-6">
-          <h2>La France Insoumise</h2>
-          <p>Nous sommes des citoyennes et citoyens venus de tous les horizons.
-          <br>Nous construisons déjà le monde de demain.
-          <br>Vous n'êtes plus seul.e.s !</p>
-          <p><a class="btn btn-primary btn-default" href="#" role="button">Découvrez notre programme L'Avenir en Commun &gt;&gt;</a></p>
-        </div>
-        <div class="col-md-6">
-          <h2>Nos Candidats pour les législatives</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-sm-12">
+        <figure class="thumbnail ">
+          <img src="/assets/img/team-i52-1.jpg" alt="Marche pour la Sixième République - 18 mars 2017" class="img-responsive">
+        </figure>
+
         </div>
       </div>
 
-      <div class>
-        <div class="col-md-6">
-          <h2>Réseaux sociaux</h2>
-          <ul>
-            <li>Twitter : <a href="https://twitter.com/{{ site.twitter_username }}">{{ site.twitter_username }}</a></li>
-            <li>Facebook : <a href="https://www.facebook.com/{{ site.facebook_username }}">{{ site.facebook_username }}</a></li>
-            <li>Youtube : <a href="https://www.youtube.com/channel/{{ site.youtube_channel }}">{{ site.youtube_channel }}</a></li>
-          </ul>
+      <div class="row">
+        <div class="{{ site.main_row_class }}">
+
+          <h2>Notre programme :<br> L'avenir en Commun</h2>
+
+          <figure class="thumbnail ">
+            <img src="/assets/img/l-avenir-en-commun-w600.jpg" alt="L'Avenir en Commun, le programme de la France Insoumise" class="img-responsive">
+          </figure>
+
+          <p>L'avenir en commun est le programme construit et défendus par le France Insoumise.</p>
+          <p>Ce programme est le fruit d'une élaboration collective animée par Charlotte Girard, juriste, et Jacques Généreux, économiste. La démarche a commencé le 10 février 2016 dès la proposition de candidature de Jean-Luc Mélenchon pour l'élection présidentielle de 2017.</p>
+
+          <p><a class="btn btn-primary" href="https://avenirencommun.fr/" role="button">Visitez le site de l'Avenir en commun <span class="more-arrow">&rtrif;</span></a></p>
+          <p><a class="btn btn-success" href="https://laec.fr/" role="button">Consultez la version électronique <span class="more-arrow">&rtrif;</span></a></p>
+
         </div>
-        <div class="col-md-6">
-          <h2>Tenez vous informés</h2>
-          <p>Abonnez vous à notre news letter.</p>
-          <form class="newsletter">
-            <label for="inputEmail" class="sr-only">Adresse mail</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Mail" required>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Je m'abonne</button>
-          </form>
+        <div class="{{ site.main_row_class }}">
+
+          <h2>Soutenez <br>la France Insoumise</h2>
+
+          <figure class="thumbnail ">
+            <img src="/assets/img/foule-insoumis-bastille-18-mars-2017.jpg" alt="Marche pour la Sixième République - 18 mars 2017" class="img-responsive">
+
+          </figure>
+
+          <p>L'avenir en commun est le programme construit et défendus par le France Insoumise.</p>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+
+          <p><a class="btn btn-primary" href="https://avenirencommun.fr/" role="button">Visitez le site de l'Avenir en commun <span class="more-arrow">&rtrif;</span></a></p>
+          <p><a class="btn btn-success" href="https://laec.fr/" role="button">Consultez la version électronique <span class="more-arrow">&rtrif;</span></a></p>
+
+        </div>
+        <div class="{{ site.main_row_class }}">
+
+          <h2>Nos Candidats <br>pour les législatives</h2>
+
+          <figure class="thumbnail ">
+            <img src="/assets/img/ariane-walaszek-daniel-monnier.jpg" alt="Ariane Walasek et Daniel Monnier - Candidats Insoumis aux législatives 2017 pour les 1ère et 2ème circonscriptions de Haute-Marne" class="img-responsive">
+          </figure>
+
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+
+          <p><a class="btn btn-primary" href="#" role="button">Portraits <span class="more-arrow">&rtrif;</span></a></p>
+
         </div>
       </div>
+
+{% include social-row.html %}
 
     </div>
