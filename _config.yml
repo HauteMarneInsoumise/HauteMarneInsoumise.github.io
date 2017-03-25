@@ -44,7 +44,7 @@ defaults:
 main_row_class: "col-sm-6"
 
 # secondary row
-
+secondary_row_class: "col-sm-4"
 
 
 

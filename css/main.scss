@@ -973,10 +973,26 @@ figure{
   }
 }
 
+.presentor{
+position: relative;
+  .caption{
+    position: absolute;
+    bottom: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+
+
+  }
+}
+
 .caption{
-  h2{
+  h1, h2, h3{
     color: $brand-success;
     margin-top: 5px;
+  }
+  h2{
     font-size: 1.4em;
     @media (min-width: $screen-xs-min) {
       font-size: 1.8em;
@@ -1029,11 +1045,12 @@ $color-youtube: #e52d27;
 
 .footer{
   margin-top: 20px;
-
   background: lighten($brand-primary, 50%);
-
+  .container{
+    padding: 15px;
+  }
   p{
-    padding: 10px 0;
+    padding: 0;
   }
 }
 
