@@ -975,15 +975,36 @@ figure{
 
 .presentor{
 position: relative;
+
   .caption{
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     display: block;
     width: 100%;
     text-align: center;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
 
+    @media (min-width: $screen-xs-min) {
+      bottom: 20px;
+      padding: 15px;
+    }
 
+    @media (min-width: $screen-md-min) {
+      bottom: 50px;
+      padding: 25px;
+    }
+
+    h2{
+        font-size: 1.2em;
+        margin: 0;
+        @media (min-width: $screen-xs-min) {
+          font-size: 1.8em;
+        }
+        @media (min-width: $screen-md-min) {
+          font-size: 2em;
+        }
+    }
   }
 }
 
@@ -992,12 +1013,21 @@ position: relative;
     color: $brand-success;
     margin-top: 5px;
   }
+
+  h1{
+    font-size: 1.6em;
+    @media (min-width: $screen-xs-min) {
+      font-size: 2em;
+    }
+  }
+
   h2{
     font-size: 1.4em;
     @media (min-width: $screen-xs-min) {
       font-size: 1.8em;
     }
   }
+
 }
 
 .btn-social{
