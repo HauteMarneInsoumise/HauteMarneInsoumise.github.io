@@ -1,12 +1,12 @@
 <div class="row">
   <div class="{{ site.secondary_row_class }}">
-    <div class="panel panel-success">
+    <div class="panel panel-primary">
       <div class="panel-heading">
         <h2 class="panel-title">Soutenez Jean-Luc Mélenchon</h2>
       </div>
       <div class="panel-body">
         <p>Soutenez le candidat de La France Insoumise à l'élection présidentielle 2017.</p>
-        <p><a class="btn btn-success" href="https://jlm2017.fr/" role="button">Site JLM2017.fr<span class="more-arrow">&rtrif;</span></a></p>
+        <p><a class="btn btn-primary" href="https://jlm2017.fr/" role="button">Site JLM2017.fr<span class="more-arrow">&rtrif;</span></a></p>
       </div>
     </div>
   </div>
@@ -14,17 +14,6 @@
 {% include subscribe-form.html %}
   </div>
   <div class="{{ site.secondary_row_class }}">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h2 class="panel-title">Retrouvez-nous sur les réseaux sociaux</h2>
-      </div>
-      <div class="panel-body">
-        <p><a class="btn btn-social btn-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span>{{ site.twitter_username }}</span></a></p>
-
-        <p><a class="btn btn-social btn-facebook" href="https://www.facebook.com/{{ site.facebook_username }}"><span>{{ site.facebook_username }}</span></a></p>
-
-        <p><a class="btn btn-social btn-youtube" href="https://www.youtube.com/channel/{{ site.youtube_channel }}"><span>TV52 Insoumis.es Haute-Marne</span></a></p>
-      </div>
-    </div>
+{% include socials.html %}
   </div>
 </div>
