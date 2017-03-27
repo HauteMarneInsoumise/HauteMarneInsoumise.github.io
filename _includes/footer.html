@@ -4,16 +4,16 @@
     <div class="col-sm-12 ">
       {% assign footerPages = site.pages | where: "menu", "footer" %}
       <ul class="list-inline">
-      {% for p in footerPages %}
-        <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
-      {% endfor %}
+        {% for p in footerPages %}
+          <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}
 
-      {% comment %} ----- copyright string ----- {% endcomment %}
-      {% assign startYear = 2017 %}
-      {% assign currentYear = site.time | date: "%Y" | to_integer %}
-      {% if startYear != currentYear %}{% capture copyYear %}{{ startYear }}-{{ currentYear }}{% endcapture %}
-      {% else %}{% assign copyYear = startYear %}{% endif %}
-      <li class="text-muted">{{site.title}} {{ copyYear }}</li>
+        {% comment %} ----- copyright string ----- {% endcomment %}
+        {% assign startYear = 2017 %}
+        {% assign currentYear = site.time | date: "%Y" | to_integer %}
+        {% if startYear != currentYear %}{% capture copyYear %}{{ startYear }}-{{ currentYear }}{% endcapture %}
+        {% else %}{% assign copyYear = startYear %}{% endif %}
+        <li class="text-muted">{{site.title}} {{ copyYear }}</li>
       </ul>
       <p class="text-muted">
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licence Creative Commons Attribution 4.0 International</a>.
