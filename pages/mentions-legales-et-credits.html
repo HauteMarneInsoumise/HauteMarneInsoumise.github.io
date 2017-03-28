@@ -1,5 +1,5 @@
 ---
-title: Mentions légales
+title: Mentions légales et crédits
 menu: footer
 weight: 120
 ---
@@ -8,10 +8,8 @@ weight: 120
     <div class="col-sm-12"><h1 class="page-title">{{ page.title }}</h1></div>
   </div>
   <div class="row">
-
-    <div class="col-md-5 col-md-offset-1">
+    <div class="{{ site.main_row_class }}">
       <h3>Editeur et Directeur de la publication</h3>
-
       <address itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
         <strong>David Jacquel</strong><br>
         <span itemprop="street-address">
@@ -22,21 +20,25 @@ weight: 120
         <span itemprop="country-name">France</span><br>
         <br>
       </address>
-
       <h3>Hébergement</h3>
       <address>
-        <strong>GitHub</strong><br>
-        275 Brannan St<br>
+        <strong><a href="https://netlify.com">Netlify</a></strong><br>
+        610 22nd Street, Suite 315<br>
         San Francisco<br>
         CA 94107, USA
       </address>
+      <h3>Crédits</h3>
+      <p>Site réalisé avec des logiciels open-source.</p>
+      <ul>
+        <li><a href="https://jekyllrb.com/">Jekyll, le générateur de sites statiques</a> et l'administration est réalisée grace à <a href="https://github.com/netlify/netlify-cms">Netlify CMS</a></li>
+        <li><a href="http://getbootstrap.com/">Twitter Bootstrap 3</a> pour le style</li>
+        <li>Tricoté avec les doigts avec <a href="https://www.ubuntu.com/">Ubuntu</a> comme système d'exploitation, <a href="https://www.gimp.org/">The Gimp</a> pour la retouche d'images, <a href="https://inkscape.org/">Inkscape</a> pour le dessin vectoriel, <a href="https://www.sublimetext.com/">Sublime Text</a> comme éditeur de code et bien d'autres encore.</li>
+      </ul>
     </div>
-  </div>
 
-  <div class="raw">
-    <div class="col-md-5 col-md-offset-1">
+    <div class="{{ site.main_row_class }}">
       <h3>Propriété intellectuelle</h3>
-      <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
+      <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Le contenu de ce site est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
     </div>
 
     <div class="col-md-5">
