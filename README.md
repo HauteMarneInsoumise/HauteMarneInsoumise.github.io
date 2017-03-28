@@ -1,7 +1,8 @@
-## Code source du site <a href="https://hautemarneinsoumise.github.io/">https://hautemarneinsoumise.github.io/</a>
+## Code source du site de la Haute-Marne Insoumise <a href="https://i52.netlify.com/">https://i52.netlify.com</a>
 
 Ce site fonctionne sous [https://jekyllrb.com/](Jekyll).
 Il utilise [Twitter bootstrap 3](http://getbootstrap.com/) pour le style.
+Il est héberger chez [https://netlify.com](Netlify) depuis un compte Netlify Open Source.
 
 Un question ? Lancez nous un message à insoumis52[at]gmail.com
 

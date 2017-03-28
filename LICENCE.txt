@@ -1,4 +1,5 @@
 Site de la Haute-Marne Insoumise - Rebellious Haute-Marne's website
+https://i52.netlify.com
 
 Content under Creative Commons Attribution 4.0 International
 https://creativecommons.org/licenses/by/4.0/
