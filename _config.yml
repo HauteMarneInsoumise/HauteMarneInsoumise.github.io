@@ -29,47 +29,44 @@ defaults:
     values:
       permalink: /:basename/
       layout: default
+  -
+    scope:
+      type: pages
+      path: "pages/blog"
+    values:
+      permalink: /:path/:basename/
+      layout: default
 
   -
     scope:
       type: posts
     values:
-      permalink: pretty
+      permalink: /blog/:day-:month-:year/:title/
       layout: post
 
+excerpt_separator: "<!--more-->"
 
 # twitter bootstrap grid classes used for display
 
 # main row
 main_row_class: "col-sm-6"
 
-# secondary row
-secondary_row_class: "col-sm-4"
 
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++++++++++++ Build settings +++++++++++++++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+# Netlify cms config (see admin/config.yml)
+netlify:
+  backend:
+    name: github
+    repo: HauteMarneInsoumise/HauteMarneInsoumise.github.io
+    branch: master
 
+  publish_mode: editorial_workflow
 
+  media_folder: "img/news"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Build settings
 
 # using twitter bootstrap
 sass:
@@ -104,3 +101,4 @@ exclude:
   - scripts/*
   - bower.json
   - Readme.md
+
