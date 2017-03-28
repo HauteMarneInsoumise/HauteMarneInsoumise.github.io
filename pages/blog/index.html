@@ -1,0 +1,19 @@
+---
+title: Blog
+menu: footer
+weight: 20
+permalink: /blog/
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      {% for post in site.posts %}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+
+      {% endfor %}
+    </div>
+  </div>
+{% include social-row.html %}
+</div>
