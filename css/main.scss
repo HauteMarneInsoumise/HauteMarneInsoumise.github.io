@@ -973,35 +973,36 @@ figure{
   }
 }
 
-.presentor{
-position: relative;
+figure.presentor{
+  position: relative;
+  background: white;
 
   .caption{
-    position: absolute;
-    bottom: 10px;
+
     display: block;
     width: 100%;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 5px;
 
-    @media (min-width: $screen-xs-min) {
+    @media (min-width: $screen-xs-max) {
       bottom: 20px;
-      padding: 15px;
+      padding: 10px;
     }
 
-    @media (min-width: $screen-md-min) {
-      bottom: 50px;
-      padding: 25px;
+    @media (min-width: $screen-sm-min) {
+      position: absolute;
+      bottom: 0px;
+      padding: 15px;
     }
 
     h2{
         font-size: 1.2em;
         margin: 0;
-        @media (min-width: $screen-xs-min) {
-          font-size: 1.8em;
+        @media (min-width: $screen-sm-min) {
+          font-size: 1.4em;
         }
-        @media (min-width: $screen-md-min) {
+        @media (min-width: $screen-lg-min) {
           font-size: 2em;
         }
     }
@@ -1023,29 +1024,77 @@ position: relative;
 
   h2{
     font-size: 1.4em;
-    @media (min-width: $screen-xs-min) {
+    @media (min-width: $screen-sm-min) {
       font-size: 1.8em;
     }
   }
 
 }
 
+.box{
+  box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.3);
+  background: $brand-primary;
+  padding: 10px;
+  margin-bottom: 22px;
+  color: white;
+  text-align: center;
+
+  h2{
+    font-size: 1.4em;
+    margin-top: 10px;
+
+    @media (min-width: $screen-sm-min) {
+        margin-top: 0px;
+    }
+  }
+}
+
+
+.box-socials{
+  background: $brand-success;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 5px 0 0;
+  }
+
+  h2{
+    @media (min-width: $screen-sm-min) {
+        margin-top: 0px;
+    }
+  }
+}
+
+
+
 .btn-social{
+  //width: 100%;
+  min-width: 32px;
+  min-height: 32px;
   padding: 0 0 0 31px;
+  margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid transparent;
+  border: 1px solid white;
   background-image: url("../img/sociocons.svg");
+  background-color: white;
   background-size: 125px;
   background-position-y: 0px;
-  color: white;
+  color: $brand-primary;
+
+  @media (min-width: $screen-sm-min) {
+    width: 32%;
+  }
+
   span{
     display: inline-block;
+    width: 100%;
     padding: 4px;
     border-radius: 0 5px 5px 0;
+    background: white;
   }
+
   &:hover{
     span{
-      background: white;
+      background: $brand-primary;
     }
   }
 }
@@ -1056,49 +1105,76 @@ $color-youtube: #e52d27;
 $color-github: #4078c0;
 
 .btn-twitter{
-  border-color: $color-twitter;
   background-position-x: -31px;
   span{
-    background-color: $color-twitter;
+    color: $color-twitter;
   }
   &:hover{
-    color: $color-twitter
+    border-color: $color-twitter;
+    background-color: $color-twitter;
+    span{
+      background-color: $color-twitter;
+      color: white;
+    }
   }
 }
-
 .btn-facebook{
-  border-color: $color-facebook;
   background-position-x: -2px;
   span{
-    background-color: $color-facebook;
+    color: $color-facebook;
   }
   &:hover{
-    color: $color-facebook
+    border-color: $color-facebook;
+    background-color: $color-facebook;
+    span{
+      background-color: $color-facebook;
+      color: white;
+    }
   }
 }
-
 .btn-youtube{
-  border-color: $color-youtube;
   background-position-x: -93px;
   span{
-    background-color: $color-youtube;
+    color: $color-youtube;
   }
   &:hover{
-    color: $color-youtube
+    border-color: $color-youtube;
+    background-color: $color-youtube;
+    span{
+      background-color: $color-youtube;
+      color: white;
+    }
+  }
+}
+.btn-github{
+  background-position-x: -91px;
+  background-position-y: -29px;
+  width: 8em;
+  span{
+    color: $color-github;
+  }
+  &:hover{
+    border-color: $color-github;
+    background-color: $color-github;
+    span{
+      background-color: $color-github;
+      color: white;
+    }
   }
 }
 
-.btn-github{
-  border-color: $color-github;
-  background-position-x: -91px;
-  background-position-y: -29px;
-  span{
-    background-color: $color-github;
-  }
-  &:hover{
-    color: $color-github
-  }
-}
+
+// .btn-github{
+//   border-color: $color-github;
+//   background-position-x: -91px;
+//   background-position-y: -29px;
+//   span{
+//     background-color: $color-github;
+//   }
+//   &:hover{
+//     color: $color-github
+//   }
+// }
 
 
 .footer{
