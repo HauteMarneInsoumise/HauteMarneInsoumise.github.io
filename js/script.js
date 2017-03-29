@@ -17,7 +17,7 @@ layout: null
 $(function() {
   if ( $.cookie('cookiesAgreement') == undefined ){
     $('.cookiesAgreement').show('slow');
-    $('.agreeCockies').click(
+    $('.agreeCoockies').click(
       function(){
         $.cookie('cookiesAgreement', 'http://www.youtube.com/watch?v=MMb3fd7fwec', { expires: 365, path: '/' });
         $('.cookiesAgreement').hide('slow');
