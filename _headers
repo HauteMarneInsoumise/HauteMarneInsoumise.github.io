@@ -7,3 +7,10 @@
   X-Content-Type-Options: nosniff
   Strict-Transport-Security: max-age=31536000
   Content-Security-Policy: default-src https://haute-marne-insoumise.fr
+
+/
+  X-Frame-Options: sameorigin
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src https://haute-marne-insoumise.fr
