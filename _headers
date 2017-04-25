@@ -1,0 +1,6 @@
+## Netlify headers setup
+## see https://www.netlify.com/docs/headers-and-basic-auth/
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
