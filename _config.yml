@@ -102,3 +102,5 @@ exclude:
   - bower.json
   - Readme.md
 
+include:
+  - _headers
