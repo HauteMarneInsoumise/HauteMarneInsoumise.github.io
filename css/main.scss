@@ -1042,10 +1042,19 @@ figure.presentor{
   h2{
     font-size: 1.4em;
     margin-top: 10px;
-
+    color: white;
     @media (min-width: $screen-sm-min) {
         margin-top: 0px;
     }
+  }
+
+}
+
+.box-blog{
+  background: $brand-info;
+
+  a{
+    color: lighten( $brand-primary, 10% );
   }
 }
 
