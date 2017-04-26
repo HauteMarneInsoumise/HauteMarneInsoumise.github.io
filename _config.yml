@@ -103,4 +103,4 @@ exclude:
   - Readme.md
 
 include:
-  - _headers
+  - _headers # netlify http headers setup
