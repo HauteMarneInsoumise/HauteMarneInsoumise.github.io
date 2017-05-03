@@ -4,13 +4,14 @@ menu: main
 weight: 10
 permalink: /
 ---
-{% comment %}{% include utils/responsive-classes.html %}{% endcomment %}
+{% comment %}{% endcomment %}
+{% include utils/responsive-classes.html %}
     <div class="container">
 
       <div class="row">
         <div class="col-sm-8">
           <figure class="thumbnail presentor">
-            <img src="/img/team-i52-2.jpg" alt="Marche pour la Sixième République - 18 mars 2017" class="img-responsive">
+            <img src="/img/news/insoumis-bologne.jpg" alt="Haute-Marne Insoumise" class="img-responsive">
             <div class="caption">
               <h2>Nous sommes <br class="visible-sm-block">la Haute-Marne Insoumise&nbsp;!</h2>
               <h2>Rejoignez-nous&nbsp;!</h2>
@@ -20,13 +21,13 @@ permalink: /
         <div class="col-sm-4">
           {% include subscribe-form-box.html %}
         </div>
-        <div class="col-sm-12 col-lg-4">
+        <div class="col-sm-4">
           {% include socials-box.html %}
         </div>
       </div>
 
       <div class="row">
-        <div class="{{ site.main_row_class }}">
+        <div class="col-sm-8">
 
           <figure class="thumbnail ">
             <div class="caption">
@@ -42,15 +43,17 @@ permalink: /
           </figure>
 
         </div>
-        <div class="{{ site.main_row_class }}">
+        <div class="col-sm-4">
           <div class="box box-blog">
             <div class="caption">
-              <h2>Actualités de campagne</h2>
+              <h2>Actualités Insoumise</h2>
             </div>
-
-{% for post in site.posts %}
-<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-{% endfor %}
+            <ul class="list-unstyled">
+            {% for post in site.posts %}
+            <li>{{ post.date |date: "%d/%m" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+            <p class="text-right"><a class="btn" href="{{ site.baseurl }}/blog/">Voir toute l'actualité &gt;</a></p>
 
           </div>
         </div>

@@ -1,0 +1,10 @@
+{% if include.post %}
+  {% assign p = include.post %}
+{% else %}
+  <p class="alert">Nothing passed to post-large include</p>
+{% endif %}
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<p>
+  <time datetime="{{ p.date }}">{% include _myDate.html date=p.date %}</time>
+  par {{ p.author }}
+</p>

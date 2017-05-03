@@ -1,19 +1,53 @@
 ---
 title: Blog
-//menu: footer
+menu: main
 weight: 20
 permalink: /blog/
 ---
 
 <div class="container">
+
   <div class="row">
     <div class="col-sm-12">
-      {% for post in site.posts %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-
-      {% endfor %}
+      <h2>Actualités</h2>
     </div>
   </div>
+
+  <div class="row">
+
+    {% for post in site.posts %}
+      {% if post.pined == true %}
+      <div class="col-sm-4">
+        <figure class="thumbnail">
+          <img src="{{ site.baseurl }}/{{ site.netlify.media_folder }}/{{ pined-post.img }}" alt="{{ pined-post.title }}" class="img-responsive">
+        </figure>
+      </div>
+      <div class="col-sm-8">
+        {% include post-large.html post=post %}
+      </div>
+      {% break %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+
+  <div class="row">
+
+    {% for post in site.posts %}
+      {% if post.url != pined.url %}
+        <div class="col-xs-4">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          {% if post.excerpt != post.content %}
+          {{ post.excerpt }}
+          {% else %}
+          <p>{{ post.content | strip_html | truncate: 100 }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
 {% include social-row.html %}
 </div>
