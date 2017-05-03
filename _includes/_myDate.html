@@ -1,0 +1,42 @@
+{% comment %}
+    @param date include.param
+    @param withTime include.withTime default to false
+
+    returns a date with french format
+
+    {% include _myDate.html date=p.date %}
+    returns a date like : lundi 01 janvier 2017
+
+    {% include _myDate.html date=p.date withTime=true %}
+    returns a date like : lundi 01 janvier 2017 à 12:34
+{% endcomment %}
+{% assign d = include.date %}
+
+{% assign month = d | date: "%-m" %}
+{% capture monthName %}
+  {% case month %}
+    {% when '1' %}janvier
+    {% when '2' %}février
+    {% when '3' %}mars
+    {% when '4' %}avril
+    {% when '5' %}mai
+    {% when '6' %}juin
+    {% when '7' %}juillet
+    {% when '8' %}août
+    {% when '9' %}septembre
+    {% when '10' %}octobre
+    {% when '11' %}novembre
+    {% when '12' %}décembre
+  {% endcase %}
+{% endcapture %}
+
+{% assign withTime = include.withTime %}
+
+{% capture display %}{{ d | date: "%d" }} {{ monthName }} {{ d | date: "%Y" }}{% endcapture %}
+
+{% if withTime %}
+  {% assign time = d | date: "%H:%M" %}
+  {% assign display = display | append: time %}
+{% endif %}
+
+le {{ display | strip_newlines }}
