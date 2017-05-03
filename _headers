@@ -9,4 +9,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
 
-  Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' www.google-analytics.com ; img-src 'self' www.google-analytics.com ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data: ; frame-src 'self' www.youtube.com ;
+  Content-Security-Policy: default-src 'none' ; script-src 'self' 'unsafe-inline' www.google-analytics.com haute-marne-insoumise.us15.list-manage.com ; img-src 'self' www.google-analytics.com ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data: ; frame-src 'self' www.youtube.com ;

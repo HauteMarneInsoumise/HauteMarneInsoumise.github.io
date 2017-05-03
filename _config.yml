@@ -11,6 +11,7 @@ url: "https://haute-marne-insoumise.fr" # the base hostname & protocol for your 
 logoImage: phi-insoumis-rouille.svg
 
 language: fr
+timezone: "Europe/Paris"
 
 twitter_username: F_insoumis52
 facebook_username: HauteMarneinsoumiseJLM2017
@@ -43,6 +44,7 @@ defaults:
     values:
       permalink: /blog/:day-:month-:year/:title/
       layout: post
+      author: La rédaction
 
 excerpt_separator: "<!--more-->"
 
