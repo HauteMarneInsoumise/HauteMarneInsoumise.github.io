@@ -36,7 +36,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $brand-success !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -1033,48 +1033,48 @@ figure.presentor{
 
 .box{
   box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.3);
-  background: $brand-primary;
+  background: lighten( $brand-primary, 50% );
   padding: 10px;
   margin-bottom: 22px;
-  color: white;
+  //color: white;
   text-align: center;
 
   h2{
     font-size: 1.4em;
     margin-top: 10px;
-    color: white;
+    //color: white;
     @media (min-width: $screen-sm-min) {
         margin-top: 0px;
     }
   }
 
+  h3{
+    font-size: 1.2em;
+  }
+
+
 }
 
 .box-blog{
-  background: $brand-info;
+  background: lighten( $brand-info, 60% );
+  text-align: left;
 
-  a{
-    color: lighten( $brand-primary, 10% );
+  li{
+    border-bottom: 1px solid lighten($brand-info, 30%);
   }
 }
 
 
 .box-socials{
-  background: $brand-success;
+  background: white;
 
   @media (min-width: $screen-sm-min) {
     padding: 5px 0 0;
   }
 
-  h2{
-    @media (min-width: $screen-sm-min) {
-        margin-top: 0px;
-    }
-  }
 }
 
-
-
+/*
 .btn-social{
   //width: 100%;
   min-width: 32px;
@@ -1087,7 +1087,7 @@ figure.presentor{
   background-color: white;
   background-size: 125px;
   background-position-y: 0px;
-  color: $brand-primary;
+  color: white;
 
   @media (min-width: $screen-sm-min) {
     width: 32%;
@@ -1103,7 +1103,7 @@ figure.presentor{
 
   &:hover{
     span{
-      background: $brand-primary;
+      background: white;
     }
   }
 }
@@ -1116,42 +1116,40 @@ $color-github: #4078c0;
 .btn-twitter{
   background-position-x: -31px;
   span{
-    color: $color-twitter;
+    border-color: $color-twitter;
+    background-color: $color-twitter;
   }
   &:hover{
     border-color: $color-twitter;
-    background-color: $color-twitter;
     span{
-      background-color: $color-twitter;
-      color: white;
+      color: $color-twitter;
     }
   }
 }
+
 .btn-facebook{
   background-position-x: -2px;
   span{
-    color: $color-facebook;
+    border-color: $color-facebook;
+    background-color: $color-facebook;
   }
   &:hover{
     border-color: $color-facebook;
-    background-color: $color-facebook;
     span{
-      background-color: $color-facebook;
-      color: white;
+      color: $color-facebook;
     }
   }
 }
 .btn-youtube{
   background-position-x: -93px;
   span{
-    color: $color-youtube;
+    border-color: $color-youtube;
+    background-color: $color-youtube;
   }
   &:hover{
     border-color: $color-youtube;
-    background-color: $color-youtube;
     span{
-      background-color: $color-youtube;
-      color: white;
+      color: $color-youtube;
     }
   }
 }
@@ -1160,31 +1158,72 @@ $color-github: #4078c0;
   background-position-y: -29px;
   width: 8em;
   span{
-    color: $color-github;
+    border-color: $color-github;
+    background-color: $color-github;
   }
   &:hover{
     border-color: $color-github;
-    background-color: $color-github;
     span{
-      background-color: $color-github;
-      color: white;
+      color: $color-github;
     }
   }
 }
 
+*/
 
-// .btn-github{
-//   border-color: $color-github;
-//   background-position-x: -91px;
-//   background-position-y: -29px;
-//   span{
-//     background-color: $color-github;
-//   }
-//   &:hover{
-//     color: $color-github
-//   }
-// }
+.btn-social{
+  //width: 100%;
+  min-width: 64px;
+  min-height: 64px;
+  padding: 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-image: url("../img/sociocons.svg");
+  background-color: white;
+  background-size: 250px;
+  background-position-x: -4px;
+  background-position-y: 0px;
 
+  span{
+    display: none;
+  }
+
+}
+
+$color-twitter: #1da1f2;
+$color-facebook: #3b5998;
+$color-youtube: #e52d27;
+$color-github: #4078c0;
+
+.btn-twitter{
+  background-position-x: -62px;
+  &:hover{
+    border-color: $color-twitter;
+  }
+}
+
+.btn-facebook{
+  background-position-x: -4px;
+  &:hover{
+    border-color: $color-facebook;
+  }
+}
+
+.btn-youtube{
+  background-position-x: -186px;
+  &:hover{
+    border-color: $color-youtube;
+  }
+}
+
+.btn-github{
+  background-position-x: -91px;
+  background-position-y: -29px;
+  &:hover{
+    border-color: $color-github;
+  }
+}
 
 .footer{
   margin-top: 20px;
