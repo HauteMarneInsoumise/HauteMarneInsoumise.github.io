@@ -2,7 +2,7 @@
 title:  "Merci les gens !"
 date:   2017-04-27 14:53:19 +0100
 img: remerciement-presidentielles-2-page001.gif
-pined: false
+pinned: false
 categories:
 ---
 

@@ -2,7 +2,7 @@
 title:  "Café citoyen le 5 mai à St-Dizier"
 date:   2017-04-31 14:53:19 +0100
 img: bandeau législatives circo52-2.gif
-pined: false
+pinned: false
 ---
 
 Militant.e.s et sympathisant.e.s de la France insoumise, venez vous lancer dans les élections législatives.

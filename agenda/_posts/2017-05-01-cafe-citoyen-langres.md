@@ -2,7 +2,7 @@
 title:  "Café citoyen le 5 mai à Langres"
 date:   2017-05-01 14:53:19 +0100
 img: cafe-citoyen-standard.gif
-pined: false
+pinned: false
 ---
 
 Venez à notre rencontre, lors de nos Cafés Citoyens pour partager une discussion sur l'Avenir en Commun notre programme pour les législatives.

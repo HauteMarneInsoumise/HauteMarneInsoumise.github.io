@@ -2,7 +2,7 @@
 title:  "Café citoyen le 4 mai à Chaumont"
 date:   2017-04-29 14:53:19 +0100
 img: cafe-citoyen-standard.gif
-pined: false
+pinned: false
 
 ---
 

@@ -2,7 +2,7 @@
 title:  "Café citoyen le 4 mai à Joinville"
 date:   2017-04-30 14:53:19 +0100
 img: bandeau législatives circo52-2.gif
-pined: false
+pinned: false
 
 ---
 

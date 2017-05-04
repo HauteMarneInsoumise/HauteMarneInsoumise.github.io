@@ -2,7 +2,7 @@
 title:  "Communiqué"
 date:   2017-04-24 14:53:19 +0100
 img: remerciement-presidentielles-2-page001.gif
-pined: true
+pinned: true
 categories:
  - communiques
 ---
