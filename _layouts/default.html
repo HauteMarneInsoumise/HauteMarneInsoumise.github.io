@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body id="top">
 
     {% include header.html %}
 {% comment %}{% include utils/responsive-classes.html %}{% endcomment %}
@@ -12,6 +12,10 @@
         {{ content }}
       </div>
     </main>
+
+    <div class="container">
+      <p class="text-right"><a class="btn btn-primary btn-sm" href="#top">&uArr; Haut de page &uArr;</a></p>
+    </div>
 
     {% include footer.html %}
     <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
