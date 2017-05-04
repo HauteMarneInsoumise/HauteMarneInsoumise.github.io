@@ -4,8 +4,8 @@ menu: main
 weight: 10
 permalink: /
 ---
-{% comment %}{% endcomment %}
-{% include utils/responsive-classes.html %}
+{% comment %}{% include utils/responsive-classes.html %}{% endcomment %}
+
     <div class="container">
 
       <div class="row">
@@ -67,9 +67,13 @@ permalink: /
             </div>
             <img src="/img/candidats/candidats-52-all_w1400.jpg" alt="Ariane Walasek et Daniel Monnier - Candidats Insoumis aux législatives 2017 pour les 1ère et 2ème circonscriptions de Haute-Marne" class="img-responsive">
             <div class="caption">
-              <p>Faite connaissance avec nos candidats aux élections législatives 2017.</p>
+              <p>Faites connaissance avec nos candidats aux élections législatives 2017.</p>
 
-              <p><a class="btn btn-primary" href="/nos-candidats-legislatives-2017/" role="button">Portraits <span class="more-arrow">&rtrif;</span></a></p>
+              <p>
+                <a class="btn btn-primary" href="{{ site.baseurl }}/candidats-legislatives-huate-marne/1ere-circonscription/" role="button">1ère circonscription : Ariane WALASZEK - Benjamin MOREL <span class="more-arrow">&rtrif;</span></a>
+                <a class="btn btn-primary" href="{{ site.baseurl }}/candidats-legislatives-huate-marne/2eme-circonscription/" role="button">2ème circonscription : Daniel MONNIER - Elisabeth BECKER <span class="more-arrow">&rtrif;</span></a>
+
+              </p>
             </div>
           </figure>
         </div>
