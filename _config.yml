@@ -45,6 +45,7 @@ defaults:
       permalink: /blog/:day-:month-:year/:title/
       layout: post
       author: La rédaction
+      pinned: false
 
 excerpt_separator: "<!--more-->"
 
@@ -52,7 +53,6 @@ excerpt_separator: "<!--more-->"
 
 # main row
 main_row_class: "col-sm-6"
-
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++++++++++++++++++++ Build settings +++++++++++++++++++++++
