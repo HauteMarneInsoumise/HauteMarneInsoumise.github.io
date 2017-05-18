@@ -7,7 +7,6 @@ permalink: /
 {% comment %}{% include utils/responsive-classes.html %}{% endcomment %}
 
     <div class="container">
-
       <div class="row">
         <div class="col-sm-8">
           <figure class="thumbnail presentor">
@@ -41,8 +40,12 @@ permalink: /
               <p><a class="btn btn-primary" href="https://avenirencommun.fr/" role="button">Site de l'Avenir en commun <span class="more-arrow">&rtrif;</span></a></p>
             </div>
           </figure>
-
         </div>
+
+        <div class="col-sm-4">
+          {% include agenda.html %}
+        </div>
+
         <div class="col-sm-4">
           <div class="box box-blog">
             <div class="caption">
@@ -50,13 +53,17 @@ permalink: /
             </div>
             <ul class="list-unstyled">
             {% for post in site.posts %}
-            <li>{{ post.date |date: "%d/%m" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+              {% if post.categories contains "agenda"  %}
+              {% comment %}Do nothing{% endcomment %}
+              {% else %}
+               <li>{{ post.date |date: "%d/%m" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+              {% endif %}
             {% endfor %}
             </ul>
             <p class="text-right"><a class="btn" href="{{ site.baseurl }}/blog/">Voir toute l'actualité &gt;</a></p>
-
           </div>
         </div>
+
       </div>
 
       <div class="row">

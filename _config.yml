@@ -20,6 +20,11 @@ youtube_channel: UCZt8bymtSIzYl5r0ma7P-8A
 
 google_analytics: UA-96117581-1
 
+# agenda
+collections:
+  agenda:
+    output: false
+
 # default setup
 
 defaults:
@@ -46,6 +51,7 @@ defaults:
       layout: post
       author: La rédaction
       pinned: false
+
 
 excerpt_separator: "<!--more-->"
 
