@@ -887,6 +887,7 @@ $hr-border:                   $gray-lighter !default;
 @import "bootstrap";
 
 .subheader{
+  position: relative;
   padding: 10px 10px 5px;
 
   a{
@@ -901,6 +902,15 @@ $hr-border:                   $gray-lighter !default;
       width: 150px;
     }
   }
+
+  .nuc{
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 0;
+      left: 0;
+  }
+
 }
 
 .navbar{
@@ -1251,3 +1261,4 @@ $color-github: #4078c0;
 .swatch{
   height: 100px;
 }
+
