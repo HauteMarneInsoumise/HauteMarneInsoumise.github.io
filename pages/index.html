@@ -26,8 +26,19 @@ permalink: /
       </div>
 
       <div class="row">
-        <div class="col-sm-8">
 
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-sm-6">
+              {% include agenda-data.html agenda=site.data.agenda-circo-1 %}
+            </div>
+            <div class="col-sm-6">
+              {% include agenda-data.html agenda=site.data.agenda-circo-2 %}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-8">
           <figure class="thumbnail ">
             <div class="caption">
               <h2><span class="small">Notre programme : </span><br>L'avenir en Commun</h2>
@@ -42,10 +53,15 @@ permalink: /
           </figure>
         </div>
 
-        <div class="col-sm-4">
-          {% include agenda.html %}
-        </div>
 
+
+
+
+
+
+
+
+{% comment %}
         <div class="col-sm-4">
           <div class="box box-blog">
             <div class="caption">
@@ -63,7 +79,7 @@ permalink: /
             <p class="text-right"><a class="btn" href="{{ site.baseurl }}/blog/">Voir toute l'actualité &gt;</a></p>
           </div>
         </div>
-
+{% endcomment %}
       </div>
 
       <div class="row">

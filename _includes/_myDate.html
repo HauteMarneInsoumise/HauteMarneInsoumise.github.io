@@ -9,6 +9,7 @@
 
     {% include _myDate.html date=p.date withTime=true %}
     returns a date like : lundi 01 janvier 2017 à 12:34
+
 {% endcomment %}
 {% assign d = include.date %}
 
@@ -30,9 +31,22 @@
   {% endcase %}
 {% endcapture %}
 
+{% assign day = d | date: "%-u" %}
+{% capture dayName %}
+  {% case day %}
+    {% when '1' %}lundi
+    {% when '2' %}mardi
+    {% when '3' %}mercredi
+    {% when '4' %}jeudi
+    {% when '5' %}vendredi
+    {% when '6' %}samedi
+    {% when '7' %}dimanche
+  {% endcase %}
+{% endcapture %}
+
 {% assign withTime = include.withTime %}
 
-{% capture display %}{{ d | date: "%d" }} {{ monthName }} {{ d | date: "%Y" }}{% endcapture %}
+{% capture display %}{{ dayName }} {{ d | date: "%d" }} {{ monthName }} {{ d | date: "%Y" }}{% endcapture %}
 
 {% if withTime %}
   {% assign time = d | date: "%H:%M" %}

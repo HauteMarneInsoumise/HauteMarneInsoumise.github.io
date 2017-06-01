@@ -1,0 +1,61 @@
+{% comment %} generates an array containing publishable events an event is published six hour after it ends {% endcomment %}
+
+{% assign agenda = include.agenda %}
+{% assign aName = agenda.name %}
+{% assign aEvents = agenda.events %}
+
+{% assign oneDayTS = 60 | times: 60 | times: 6 %}
+{% assign validDates = "" | split:"/" %}
+
+{% comment %}
+Adding a "| plus: 0" filter ensures that returned value is a fixnum
+Otherwise it is returned as a string
+{% endcomment %}
+{% assign currentTime = site.time | date:"%s" | plus: 0 %}
+
+{% for date in aEvents %}
+
+  {% if date.end %}
+    {% assign dateTS = date.end | date:"%s" | plus: 0 %}
+    {% assign maxPrintDate = dateTS %}
+  {% else %}
+    {% assign dateTS = date.start | date:"%s" %}
+    {% assign maxPrintDate = dateTS | plus: oneDayTS %}
+  {% endif %}
+
+  {% comment %}
+  filtering events and adding valide ones to "validDates" array
+  {% endcomment %}
+  {% if maxPrintDate > currentTime %}
+    {% assign validDates = validDates | push: date %}
+  {% endif %}
+{% endfor %}
+
+<div class="box box-blog">
+  <div class="caption">
+    <h2>Agenda {{ agenda.name }}</h3>
+  </div>
+  {% if validDates.size > 0 %}
+    <ul class="list-unstyled">
+      {% for event in validDates %}
+        {% if event.end %}
+          {% capture dateString %}{{ event.start | date: "%H:%M" %}}-{{ event.end | date: "%H:%M" %}}{% endcapture %}
+        {% else %}
+          {% capture dateString %}{{ event.start | date: "%H:%M" %}}{% endcapture %}
+        {% endif %}
+        <li>
+          <strong>{% include _myDate.html date=event.start %} - {{ dateString }}</strong><br>
+          <span class="">{{ event.title }}</span>
+          <br>{{ event.address }}
+
+          {% if event.facebookEvent %}<br><a href="{{ event.facebookEvent }}">Infos sur Facebook</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Pas d’évènements annoncés sur le site ? C'est certainement un oubli de notre webmaster ;-)</p>
+    <p>Retrouvez également notre agenda sur
+    <a href="https://www.facebook.com/{{ site.facebook_username }}" title="Retrouvez {{ site.facebook_username }} sur Facebook">notre page Facebook</a></p>
+    <a class="btn btn-social btn-facebook" href="https://www.facebook.com/{{ site.facebook_username }}" title="Retrouvez {{ site.facebook_username }} sur Facebook"><span class="hidden-xs">Facebook</span></a>
+  {% endif %}
+</div>

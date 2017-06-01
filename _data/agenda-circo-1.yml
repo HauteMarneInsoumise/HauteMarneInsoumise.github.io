@@ -1,0 +1,32 @@
+name: 1ère circonscription 'Sud Haute-Marne'
+
+events:
+
+  -
+    title: Café Insoumis à Bourbonne les Bains
+    start : 2017-06-01 18:00
+    end :
+    address: Café Le Régina
+    facebookEvent: https://www.facebook.com/events/289737464787140
+
+  -
+    title: Rencontre des associations Sud Haute Marnaise
+    start : 2017-06-03 10:00
+    end : 2017-06-03 12:00
+    address: 3 Rue Richard de Foulon, 52200 Langres
+    facebookEvent: https://www.facebook.com/events/1427903307297076
+
+  -
+    title: Débat politique France 3 Champagne Ardennes
+    start : 2017-06-04 11:30
+    end :
+    address: Ariane WALASZEK débat en direct sur France 3 Champagne Ardennes.
+    facebookEvent: https://www.facebook.com/events/1437860032918855
+
+  -
+    title: Petit déjeuner insoumis Quartier Marcel Pagnol à Chaumont
+    start : 2017-06-05 10:30
+    end : 2017-06-03 12:00
+    address: Quartier Marcel Pagnol, Chaumont
+    facebookEvent: https://www.facebook.com/events/1705168352832666
+
