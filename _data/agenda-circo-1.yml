@@ -59,22 +59,42 @@ events:
   -
     title: Tractage au marché de Chalindrey avec notre candidate en rosalie
     start : 2017-06-08 09:00
-    end : 2017-06-08 10:00
+    end : 2017-06-08 10:30
     address: Référent Anthony Blanchon 07 86 79 91 41
     facebookEvent:
 
   -
     title: Tractage à l'usine de Nogent avec notre candidate en rosalie
-    start : 2017-06-08 11:00
-    end : 2017-06-08 12:00
+    start : 2017-06-08 11:30
+    end : 2017-06-08 13:30
     address: Référent Céline Surel 06 18 45 37 05
     facebookEvent:
 
   -
-    title: Notre candidate participe à une réunion d'échange sur la coopération agricole organisée par EMC2 à Villiers-sur-Marne
-    start : 2017-06-08 17:00
-    end : 2017-06-08 18:30
-    address:
+    title: Tractage au marché de Langres avec notre candidate en rosalie
+    start : 2017-06-09 10:00
+    end : 2017-06-09 11:30
+    address: Référent Benjamin Morel 06 99 61 49 72
     facebookEvent:
 
+  -
+    title: Tractage aux feux rouge des usines de Langres avec notre candidate en rosalie
+    start : 2017-06-09 11:30
+    end : 2017-06-08 13:30
+    address: "Référente : Godet Karine 06 67 88 28 84"
+    facebookEvent:
+
+  -
+    title: Café citoyen au bar le Muz'ik de Langres
+    start : 2017-06-09 18:00
+    end : 2017-06-08 19:30
+    address:
+    facebookEvent: https://www.facebook.com/events/804034976428845
+
+  -
+    title: Manifestation en soutien à l'hôpital, place de la Mairie à Chaumont
+    start : 2017-06-10 10:00
+    end : 2017-06-10 12:00
+    address:
+    facebookEvent:
 

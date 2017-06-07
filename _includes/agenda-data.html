@@ -46,8 +46,7 @@ Otherwise it is returned as a string
         <li>
           <strong>{% include _myDate.html date=event.start %} - {{ dateString }}</strong><br>
           <span class="">{{ event.title }}</span>
-          <br>{{ event.address }}
-
+          {% if event.address %}<br>{{ event.address }}{% endif %}
           {% if event.facebookEvent %}<br><a href="{{ event.facebookEvent }}">Infos sur Facebook</a>{% endif %}
         </li>
       {% endfor %}
