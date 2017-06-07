@@ -51,8 +51,8 @@ events:
 
   -
     title: Notre candidate rencontre le Maire de Villegusien
-    start : 2017-06-07 19:00
-    end : 2017-06-07 20:00
+    start : 2017-06-07 14:30
+    end : 2017-06-07 15:30
     address:
     facebookEvent:
 
@@ -80,21 +80,35 @@ events:
   -
     title: Tractage aux feux rouge des usines de Langres avec notre candidate en rosalie
     start : 2017-06-09 11:30
-    end : 2017-06-08 13:30
+    end : 2017-06-09 13:30
     address: "Référente : Godet Karine 06 67 88 28 84"
+    facebookEvent:
+
+  -
+    title: Notre candidate rencontre le Maire de Bourmont
+    start : 2017-06-09 14:30
+    end : 2017-06-09 15:30
+    address:
     facebookEvent:
 
   -
     title: Café citoyen au bar le Muz'ik de Langres
     start : 2017-06-09 18:00
-    end : 2017-06-08 19:30
-    address:
+    end : 2017-06-09 19:30
+    address: Slam Politique par Estelle Ladoire
     facebookEvent: https://www.facebook.com/events/804034976428845
+
+  -
+    title: Tractage au marché de Chaumont
+    start : 2017-06-10 08:00
+    end : 2017-06-10 10:00
+    address: référent Jean-François Andriot 06 16 32 00 66
+    facebookEvent:
 
   -
     title: Manifestation en soutien à l'hôpital, place de la Mairie à Chaumont
     start : 2017-06-10 10:00
     end : 2017-06-10 12:00
-    address:
+    address: référent Jean-François Andriot 06 16 32 00 66
     facebookEvent:
 
