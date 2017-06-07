@@ -57,42 +57,50 @@ events:
     facebookEvent:
 
   -
-    title: Tractage au marché de Chalindrey avec notre candidate en rosalie
-    start : 2017-06-08 09:00
-    end : 2017-06-08 10:30
+    title: Notre candidate rencontre le Maire de Challindrey
+    start : 2017-06-08 08:30
+    end : 2017-06-08 09:00
+    address:
+    facebookEvent:
+
+  -
+    title: Tractage au marché de Chalindrey
+    start : 2017-06-08 09:45
+    end : 2017-06-08 11:45
     address: Référent Anthony Blanchon 07 86 79 91 41
     facebookEvent:
 
   -
-    title: Tractage à l'usine de Nogent avec notre candidate en rosalie
-    start : 2017-06-08 11:30
-    end : 2017-06-08 13:30
+    title: Tractage à l'usine de Nogent aux Forges de Courcelles 23 Rue du Onze Novembre, avec Ariane et Rosalie
+    start : 2017-06-08 11:45
+    end : 2017-06-08 13:45
     address: Référent Céline Surel 06 18 45 37 05
     facebookEvent:
 
   -
-    title: Tractage au marché de Langres avec notre candidate en rosalie
+    title: Notre candidate rencontre le Maire de Bourmont
+    start : 2017-06-08 14:30
+    end : 2017-06-08 15:30
+    address:
+    facebookEvent:
+
+  -
+    title: Tractage au marché de Langres
     start : 2017-06-09 10:00
     end : 2017-06-09 11:30
     address: Référent Benjamin Morel 06 99 61 49 72
     facebookEvent:
 
   -
-    title: Tractage aux feux rouge des usines de Langres avec notre candidate en rosalie
-    start : 2017-06-09 11:30
-    end : 2017-06-09 13:30
+    title: Tractage aux feux rouge des usines de Langres - ZI Nouvelles Franchises
+    start : 2017-06-09 11:45
+    end : 2017-06-09 13:45
     address: "Référente : Godet Karine 06 67 88 28 84"
     facebookEvent:
 
-  -
-    title: Notre candidate rencontre le Maire de Bourmont
-    start : 2017-06-09 14:30
-    end : 2017-06-09 15:30
-    address:
-    facebookEvent:
 
   -
-    title: Café citoyen au bar le Muz'ik de Langres
+    title: Café Slam citoyen au bar le Muz'ik de Langres
     start : 2017-06-09 18:00
     end : 2017-06-09 19:30
     address: Slam Politique par Estelle Ladoire
@@ -100,7 +108,7 @@ events:
 
   -
     title: Tractage au marché de Chaumont
-    start : 2017-06-10 08:00
+    start : 2017-06-10 09:00
     end : 2017-06-10 10:00
     address: référent Jean-François Andriot 06 16 32 00 66
     facebookEvent:
@@ -112,3 +120,30 @@ events:
     address: référent Jean-François Andriot 06 16 32 00 66
     facebookEvent:
 
+  -
+    title: Trêve électorale, arrêt du collage
+    start : 2017-06-10 23:59
+    end :
+    address:
+    facebookEvent:
+
+  -
+    title: Assesseurs et délégués en action
+    start : 2017-06-11 08:00
+    end : 2017-06-11 19:00
+    address:
+    facebookEvent:
+
+  -
+    title: Dépouillement, tous les insoumis dans leur bureau de vote
+    start : 2017-06-11 18:00
+    end : 2017-06-11 19:00
+    address:
+    facebookEvent:
+
+  -
+    title: Rassemblement insoumis au Boulingrin
+    start : 2017-06-11 20:00
+    end : 2017-06-11 21h30
+    address: 26 rue Forgeot à Chaumont pour partager notre joie et continuer à construire notre Avenir en Commun
+    facebookEvent:
